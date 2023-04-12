@@ -18,14 +18,14 @@ export const menuArray = [
         ingredients: ["pasta", "egg", "black pepper", "cream"],
         price: 15,
         emoji: "🍝",
-        id: 3
+        id: 2
     },
         {
         name: "Beer",
         ingredients: ["grain", "hops", "yeast", "water"],
         price: 12,
         emoji: "🍺",
-        id: 2
+        id: 3
     },
     {
         name: "Milk",
