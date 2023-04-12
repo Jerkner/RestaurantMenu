@@ -1,0 +1,274 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:aliceblue;
+    padding: 0;
+    margin: 0;
+    font-family: 'Smythe';
+    font-weight: 400;
+} 
+
+.main-container {
+    height: 1150px;
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+
+header {
+    background-image: url("images/bg img.jpg");
+    background-size: cover;
+    height: 167px;
+    position: relative;
+    margin-bottom: 22px;
+}
+
+h1 {
+    margin: 0;
+    position: absolute;
+    top: 46px;
+    left: 46px;
+    color: white;
+    font-size: 39px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+
+h2 {
+    margin: 0;
+    position: absolute;
+    top: 89px;
+    left: 46px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 14px;
+    color: white;
+
+}
+
+/* Section styling */
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    margin: 0 auto;
+    border-bottom: solid #D2D2D2 2px;
+    width: 508px;
+}
+
+.item {
+    margin: 45px auto;
+    width: 508px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    row-gap: 30px;
+    position: relative;
+
+  }
+  
+.icon {
+    font-size: 78px;
+    margin-right: 30px;
+}
+
+.item-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-name {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+}
+
+.item-ingredients {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8B8B8B;
+}
+
+.item-price {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.add-btn {
+    border: none;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    background-image: url("images/add-btn.jpg");
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Order section */
+
+.order-section {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 45px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+}
+
+.your-order {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.ordered-item {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.shopping-list {
+    margin: 10px 45px;
+    display: block;
+    justify-content: space-between;
+
+}
+
+.remove {
+    color: #BBBBBB;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 10px;
+}
+
+.sum-divider {
+    margin: 30px auto;
+    border: #393333 2px solid;
+    width: 504px;
+}
+
+.total-price {
+    margin: 0 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#completeOrder,
+#pay,
+#cancel {
+    margin: 50px auto;
+    border-radius: 3px;
+    border: none;
+    background-color: #16DB99;
+    width: 508px;
+    height: 60px;
+    color: white;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.add-btn,
+.remove,
+#completeOrder,
+#pay,
+#cancel {
+    cursor: pointer;
+}
+
+/* Modal section */
+
+#modal-section {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: auto;
+    left: 40px;
+    background-color: #16DB99;
+    width: 524px;
+    height: 542px;
+    background-color: #FFFFFF;
+    z-index: 10;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.enter-card-details {
+    margin: 25px auto;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 4px;
+    margin: 11px auto;
+    padding-left: 27px;
+    border: 1px solid #757575;
+    width: 476px;
+    height: 71px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {    
+    -webkit-appearance: none;
+}
+
+#pay,
+#cancel {
+width: 476px;
+margin: 20px auto;
+}
+
+#cancel {
+    margin-top: 0;
+    background-color: red;
+}
+.thanks-container {
+    margin: 0 auto;
+    background-color: #ECFDF5;
+    width: 504px;
+    height: 120px;
+}
+
+.thanks-text {
+    padding: 50px 60px;
+    color: #065F46;
+}
+
+/* Utility */
+
+.hidden {
+    display: none;
+}
